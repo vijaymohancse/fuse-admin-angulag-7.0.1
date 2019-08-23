@@ -16,6 +16,13 @@
         }
 
         .hero-text {
+            .dot {
+                height: 10px;
+                width: 10px;
+                background-color: #8AFF33;
+                border-radius: 50%;
+                display: inline-block;
+              }
 
             .hero-icon {
                 position: absolute;
@@ -114,15 +121,15 @@
                         min-height: 64px !important;
                         max-height: 64px !important;
 
-                        &.web-bg {
-                            background: mat-color($mat-blue, 500);
+                        &.Web-bg {
+                            background: mat-color($mat-blue-grey, 500);
                         }
 
                         &.android-bg {
                             background: mat-color($mat-green, 500);
                         }
 
-                        &.firebase-bg {
+                        &.Firebase-bg {
                             background: mat-color($mat-amber, 800);
                         }
 

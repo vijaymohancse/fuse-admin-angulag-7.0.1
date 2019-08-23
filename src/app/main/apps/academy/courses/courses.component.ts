@@ -61,6 +61,7 @@ export class AcademyCoursesComponent implements OnInit, OnDestroy
         this._academyCoursesService.onCoursesChanged
             .pipe(takeUntil(this._unsubscribeAll))
             .subscribe(courses => {
+                console.log(courses);
                 this.filteredCourses = this.coursesFilteredByCategory = this.courses = courses;
             });
     }
@@ -119,7 +120,7 @@ export class AcademyCoursesComponent implements OnInit, OnDestroy
         else
         {
             this.filteredCourses = this.coursesFilteredByCategory.filter((course) => {
-                return course.title.toLowerCase().includes(searchTerm);
+                return course.name.toLowerCase().includes(searchTerm);
             });
         }
     }

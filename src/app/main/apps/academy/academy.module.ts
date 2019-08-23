@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
+import {NgxDocViewerModule} from 'ngx-doc-viewer';
+
 
 import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatSelectModule } from '@angular/material';
 
@@ -20,7 +23,7 @@ const routes = [
         }
     },
     {
-        path     : 'courses/:courseId/:courseSlug',
+        path     : 'courses/:courseName',
         component: AcademyCourseComponent,
         resolve  : {
             academy: AcademyCourseService
@@ -45,6 +48,9 @@ const routes = [
         MatIconModule,
         MatInputModule,
         MatSelectModule,
+        MarkdownModule.forRoot(),
+        NgxDocViewerModule,
+        
 
         FuseSharedModule,
         FuseSidebarModule

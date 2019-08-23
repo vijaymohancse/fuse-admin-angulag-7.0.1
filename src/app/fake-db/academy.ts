@@ -173,10 +173,11 @@ export class AcademyFakeDb
     private static demoSteps = [
         {
             'title'  : 'Introduction',
-            'content': '<h1>Step 1 - Introduction</h1>' +
+            'content': '<h1>Step 1 - Introductionn</h1>' +
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -216,6 +217,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -255,6 +257,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -294,6 +297,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -333,6 +337,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -372,6 +377,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -411,6 +417,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -450,6 +457,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -489,6 +497,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +
@@ -528,6 +537,7 @@ export class AcademyFakeDb
             '<br>' +
             'This is an example step of the course. You can put anything in here from example codes to videos.' +
             '<br><br>' +
+            '<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' +
             'To install the CLI you need to have installed <b>npm</b> which typically comes with <b>NodeJS</b>.' +
             'To install or upgrade the CLI run the following <b>npm</b> command:' +
             '<br><br>' +

@@ -63,7 +63,9 @@ export class AcademyCourseComponent implements OnInit, OnDestroy, AfterViewInit
             .pipe(takeUntil(this._unsubscribeAll))
             .subscribe(course => {
                 this.course = course;
+                
             });
+            
     }
 
     /**

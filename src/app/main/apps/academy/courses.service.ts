@@ -58,7 +58,7 @@ export class AcademyCoursesService implements Resolve<any>
     getCategories(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this._httpClient.get('api/academy-categories')
+            this._httpClient.get('http://localhost:8080/services/hcarecatalog/api/categories')
                 .subscribe((response: any) => {
                     this.onCategoriesChanged.next(response);
                     resolve(response);
@@ -74,9 +74,10 @@ export class AcademyCoursesService implements Resolve<any>
     getCourses(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this._httpClient.get('api/academy-courses')
+            this._httpClient.get('http://localhost:8080/services/hcarecatalog/api/assets')
                 .subscribe((response: any) => {
                     this.onCoursesChanged.next(response);
+                    console.log(response);
                     resolve(response);
                 }, reject);
         });

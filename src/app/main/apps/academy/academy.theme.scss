@@ -8,8 +8,8 @@
     #academy-courses {
 
         .header {
-            background: #1A237E;
-            background: linear-gradient(to right, #0E2A3B 0%, #34306B 100%);
+            background: #020500 ;
+            background: linear-gradient(to right, black 0%,black 100%);
 
             .hero-text {
 
@@ -139,7 +139,7 @@
 
             .content {
                 @if ($is-dark) {
-                    background: #353535;
+                    background: #111111;
                 } @else {
                     background: mat-color($mat-grey, 200);
                 }
