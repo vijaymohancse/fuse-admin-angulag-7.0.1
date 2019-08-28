@@ -59,33 +59,26 @@
                         <div *ngFor="let url of course.url">
                             <b>{{url.description}}</b> : <a href="{{url.url}}">{{url.url}}</a>
                         </div>
-                        <br>
-                        <br>
                         <div>
-                            <iframe width="500" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+                            <iframe width="800" height="500" src="https://www.youtube.com/embed/75POlsXMcYY"></iframe>
+                            <!-- <iframe width="500" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
                         </div>
-                        <table *ngIf="course.attachment">
-                            <td>
-                                <tr>{{course.attachment.type.name}} </tr>
-                                <tr><iframe style="height: 45vh; width:40%; display: block;" ngx-document
-                                        src="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf"
-                                        provider="google"></iframe>
-                                </tr>
-                            </td>
+                        <table *ngFor="let item of course.attachment">
+                            <tr>
+                                <td>{{item.name}} </td>
+                                <!-- <td>{{course.attachment.type.name}} </td> -->
+                                <td>
+                                    <a [href]="'http://localhost:8080/services/hcarecatalog/api/attachments/'+item.name+'.pdf'"
+                                        download="file.txt">DownloadFile</a>
+                                    <button mat-icon-button class="mr-16"
+                                        [routerLink]="'http://localhost:8080/services/hcarecatalog/api/attachments/'+item.name">
+                                        <mat-icon>{{item.type.description}}</mat-icon>
+                                    </button>
+                                </td>
+                            </tr>
+
                         </table>
-                        <!-- <div *ngIf="course.attachment" class="mail-attachments">
-
-                            <div class="title">
-                                <span>Attachments</span>
-                                ({{course.attachment.type.name}})
-                            </div>
-
-
-
-                            <div class="attachment" fxLayout="column">
-                                
-                            </div>
-                        </div> -->
                     </div>
                     <!-- <div id="course-step-content" class="course-step-content" [innerHTML]="course.description"> -->
 

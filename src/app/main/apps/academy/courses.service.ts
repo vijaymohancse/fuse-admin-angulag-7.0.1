@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { APIConstants } from 'app/api_constants';
 
 @Injectable()
 export class AcademyCoursesService implements Resolve<any>
@@ -58,7 +59,7 @@ export class AcademyCoursesService implements Resolve<any>
     getCategories(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this._httpClient.get('http://localhost:8080/services/hcarecatalog/api/categories')
+            this._httpClient.get(APIConstants.API_ENDPOINT + '/categories')
                 .subscribe((response: any) => {
                     this.onCategoriesChanged.next(response);
                     resolve(response);
@@ -74,7 +75,7 @@ export class AcademyCoursesService implements Resolve<any>
     getCourses(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this._httpClient.get('http://localhost:8080/services/hcarecatalog/api/assets')
+            this._httpClient.get(APIConstants.API_ENDPOINT + '/assets')
                 .subscribe((response: any) => {
                     this.onCoursesChanged.next(response);
                     console.log(response);

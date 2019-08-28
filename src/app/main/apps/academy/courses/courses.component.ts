@@ -120,7 +120,7 @@ export class AcademyCoursesComponent implements OnInit, OnDestroy
         else
         {
             this.filteredCourses = this.coursesFilteredByCategory.filter((course) => {
-                return course.name.toLowerCase().includes(searchTerm);
+                return course.category.name.toLowerCase().includes(searchTerm);
             });
         }
     }

@@ -1,0 +1,7 @@
+applications:
+- name: deloitte-hlms-ui
+  disk_quota: 450M
+  path: target/deloitte-hlms-1.0.jar
+  instances: 1
+  memory: 450M
+  buildpack: staticfile_buildpack
