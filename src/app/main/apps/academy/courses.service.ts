@@ -63,7 +63,9 @@ export class AcademyCoursesService implements Resolve<any>
                 .subscribe((response: any) => {
                     this.onCategoriesChanged.next(response);
                     resolve(response);
+                    console.log(response);
                 }, reject);
+                
         });
     }
 

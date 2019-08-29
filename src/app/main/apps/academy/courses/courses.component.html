@@ -38,7 +38,7 @@
                         <mat-option [value]="'all'">
                             All
                         </mat-option>
-                        <mat-option *ngFor="let category of categories" [value]="category.name">
+                        <mat-option *ngFor="let category of categories.category" [value]="category.name">
                             {{ category.name }}
                         </mat-option>
                     </mat-select>
@@ -68,11 +68,11 @@
 
                         <div class="content" fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 auto">
                             <div class="h1">{{course.name}}</div>
-                            <div class="updated">Updated {{course.updatedTimeStampStr}}</div>
+                            <div class="updated">Updated {{course.updatedTimeStamp}}</div>
                         </div>
 
                         <div class="footer" fxLayout="row" fxLayoutAlign="center center">
-                            <button mat-button color="accent" [routerLink]="'/apps/academy/courses/' + course.name">
+                            <button mat-button color="accent" [routerLink]="'/apps/academy/courses/' + course.uid">
                                 Details
                             </button>
                         </div>

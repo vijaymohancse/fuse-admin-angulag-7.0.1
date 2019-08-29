@@ -60,8 +60,18 @@
                             <b>{{url.description}}</b> : <a href="{{url.url}}">{{url.url}}</a>
                         </div>
                         <div>
+                            <!-- {{course.videoLink}} -->
+                            <div
+                                *ngIf="course.videoLink && course.name === 'Cobol Copy Book to JSON Transformation Utility'">
+                                <iframe width="800" height="500" allowfullscreen="allowfullscreen"
+                                    src="https://www.youtube.com/embed/zovUUStN5uc"></iframe>
+                            </div>
+                            <div *ngIf="course.videoLink && course.name === 'Circuit Breaker Pattern'">
+                                <iframe width="800" height="500" allowfullscreen="allowfullscreen"
+                                    src="https://www.youtube.com/embed/75POlsXMcYY"></iframe>
+                            </div>
 
-                            <iframe width="800" height="500" src="https://www.youtube.com/embed/75POlsXMcYY"></iframe>
+
                             <!-- <iframe width="500" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
                         </div>
                         <table *ngFor="let item of course.attachment">
@@ -76,6 +86,7 @@
                                         <mat-icon>{{item.type.description}}</mat-icon>
                                     </button>
                                 </td>
+
                             </tr>
 
                         </table>

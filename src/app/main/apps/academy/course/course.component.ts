@@ -7,6 +7,7 @@ import { FusePerfectScrollbarDirective } from '@fuse/directives/fuse-perfect-scr
 import { FuseSidebarService } from '@fuse/components/sidebar/sidebar.service';
 
 import { AcademyCourseService } from 'app/main/apps/academy/course.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
     selector     : 'academy-course',
@@ -38,7 +39,8 @@ export class AcademyCourseComponent implements OnInit, OnDestroy, AfterViewInit
     constructor(
         private _academyCourseService: AcademyCourseService,
         private _changeDetectorRef: ChangeDetectorRef,
-        private _fuseSidebarService: FuseSidebarService
+        private _fuseSidebarService: FuseSidebarService,
+        public sanitizer: DomSanitizer
     )
     {
         // Set the defaults
